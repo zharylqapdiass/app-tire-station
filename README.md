@@ -29,10 +29,19 @@ composer install
 # 2. Установка JS-зависимостей
 npm install
 
-# 3. Запуск Laravel-сервера
+# 3. Создание базы данных SQLite (если ещё не создана)
+touch database/database.sqlite
+
+# 4. Выполнение миграций
+php artisan migrate
+
+# 5. Наполнение базы тестовыми данными
+php artisan db:seed
+
+# 6. Запуск Laravel-сервера
 php artisan serve
 
-# 4. Запуск сборки фронтенда (для разработки)
+# 7. Запуск фронтенда в режиме разработки
 npm run dev
 
 # или
