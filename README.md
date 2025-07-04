@@ -29,7 +29,7 @@ composer install
 # 2. Установка JS-зависимостей
 npm install
 
-# 3. Создание базы данных SQLite (если ещё не создана)
+# 3. Создание файла базы данных SQLite
 touch database/database.sqlite
 
 # 4. Выполнение миграций
